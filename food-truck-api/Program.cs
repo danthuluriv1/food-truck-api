@@ -3,7 +3,7 @@ using food_truck_api.Repository;
 using food_truck_api.Services;
 using System.Reflection;
 
-var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "local";
+var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "development";
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration
     .SetBasePath(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location))
